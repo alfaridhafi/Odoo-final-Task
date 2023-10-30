@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="training_class_action" model="ir.actions.act_window">
+        <field name="name">Campus Management</field>
+        <field name="res_model">campus_management.training_class</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="training_class_view_tree" model="ir.ui.view">
+        <field name="name">training.class.view.tree</field>
+        <field name="model">campus_management.training_class</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="Dosen" />
+                <field name="murid" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- Tampilan data --> 
+    <record id="training_class_view_form" model="ir.ui.view">
+        <field name="name">training.class.view.form</field>
+        <field name="model">campus_management.training_class</field>
+        <field name="arch" type="xml">
+            <form>
+                <!-- <header>
+                    <field name="state" widget="statusbar" />
+                </header> -->
+
+                <sheet>
+                    <group>
+                        <group string="Manajemen Kampus">
+                            <field name="Dosen" />
+                            <field name="murid" />
+                            <field name="kelas" />
+                            <field name="Gedung" />
+                            <field name="pelajaran" />
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

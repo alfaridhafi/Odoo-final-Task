@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <data>
+    <menuitem
+      id="Campus_Management"
+      name="Campus" 
+    />
+
+    <menuitem
+      id="training_class"
+      name="Class"
+      parent="Campus_Management"
+      sequence="2"
+      action="training_class_action" />
+
+
+    <menuitem
+      id="campus_config"
+      name="Config"
+      sequence="3"
+      parent="Campus_Management" />
+
+    <menuitem
+      id="campus_pelajaran"
+      name="Pelajaran"
+      parent="campus_config"
+      action="pelajaran_action" />
+
+  </data>
+</odoo>

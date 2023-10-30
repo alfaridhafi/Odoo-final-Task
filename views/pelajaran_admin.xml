@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="pelajaran_action" model="ir.actions.act_window">
+        <field name="name">Pelajaran</field>
+        <field name="res_model">campus_management.pelajaran</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="pelajaran_action_view_tree" model="ir.ui.view">
+        <field name="name">Pelajaran</field>
+        <field name="model">campus_management.pelajaran</field>
+        <field name="arch" type="xml">
+            <tree string="pelajaran">
+                <field name="pelajaran"></field>
+            </tree>
+        </field>
+    </record>
+
+    <record id="pelajaran_action_view_form" model="ir.ui.view">
+        <field name="name">campus_management.pelajaran.view.form</field>
+        <field name="model">campus_management.pelajaran</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="pelajaran"></field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
